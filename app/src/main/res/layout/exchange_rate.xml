@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:paddingRight="6dp">
+
+            <ImageView
+                android:id="@+id/country_logo"
+                android:layout_width="42dp"
+                android:layout_height="27dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/usa" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/local_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    tools:text="usd" />
+
+                <TextView
+                    android:id="@+id/currency_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="#000000"
+                    tools:text="United States Dollar" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/BTCExchange_rate"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:textAllCaps="true"
+                android:gravity="right"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#f7931a"
+                tools:text="4568.99" />
+
+            <TextView
+                android:id="@+id/ETHExchange_rate"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#666"
+                tools:text="4568.99" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
